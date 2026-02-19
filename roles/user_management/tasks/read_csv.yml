@@ -1,0 +1,5 @@
+---
+- name: Read CSV
+  community.general.read_csv:
+    path: "{{ playbook_dir }}/../data/users.csv"
+  register: csv

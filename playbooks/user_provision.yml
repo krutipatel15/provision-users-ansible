@@ -1,0 +1,8 @@
+---
+- name: Provision approved users
+  hosts: local
+  become: true
+  gather_facts: false
+
+  roles:
+    - user_management

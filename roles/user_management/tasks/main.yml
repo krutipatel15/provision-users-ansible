@@ -1,0 +1,6 @@
+---
+# Main entry point for tasks
+- include_tasks: read_csv.yml
+- include_tasks: filter_users.yml
+- include_tasks: create_users.yml
+- include_tasks: summary.yml

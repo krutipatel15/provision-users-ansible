@@ -1,0 +1,9 @@
+---
+- name: Create users
+  ansible.builtin.user:
+    name: "{{ item.Username }}"
+    shell: "{{ item.Shell }}"
+    state: present
+    create_home: yes
+  loop: "{{ approved }}"
+  register: result

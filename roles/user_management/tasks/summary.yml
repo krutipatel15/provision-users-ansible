@@ -1,0 +1,4 @@
+---
+- name: Show summary
+  debug:
+    var: result.results

@@ -1,0 +1,4 @@
+---
+- name: Keep approved users
+  set_fact:
+    approved: "{{ csv.list | selectattr('Status','equalto','Approved') | list }}"
