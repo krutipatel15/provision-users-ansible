@@ -1,6 +1,6 @@
 ---
 - name: Provision approved users
-  hosts: local
+  hosts: aws_servers
   become: true
   gather_facts: false
 
