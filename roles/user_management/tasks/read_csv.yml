@@ -2,4 +2,5 @@
 - name: Read CSV
   community.general.read_csv:
     path: "{{ playbook_dir }}/../data/users.csv"
+  delegate_to: localhost
   register: csv
